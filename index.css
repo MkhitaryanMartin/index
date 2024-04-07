@@ -55,3 +55,9 @@
     margin: 20px 0 60px 0; 
 
 }
+
+.next-button{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
