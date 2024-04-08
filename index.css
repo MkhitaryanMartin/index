@@ -63,3 +63,19 @@
     font-size: 18px;
     border-radius: 10px;
 }
+
+.helper{
+    margin-bottom: 50px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+
+}
+.not-active{
+    background-color: red;
+}
+.active-answer{
+    border: 5px black solid;
+}
