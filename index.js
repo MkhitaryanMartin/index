@@ -4,9 +4,9 @@ const nextButton = document.querySelector(".next-button");
 const correctAnswer = document.querySelector(".correct-answer");
 const questionsCount = document.querySelector(".questions-count");
 const helper = document.querySelector(".helper");
-let helperActive = true
-let click = false
-
+const reset = document.querySelector(".reset");
+let helperActive = true;
+let click = false;
 let index = 0;
 let data;
 let correctAnswerCount = 0;
@@ -34,7 +34,7 @@ function convertObj(string) {
     return questionsArray;
 }
 function generateRandomExcluding(exclude) {
-    var randomNumber;
+   let randomNumber;
     do {
         randomNumber = Math.floor(Math.random() * 4); 
     } while (randomNumber === exclude);
@@ -107,4 +107,15 @@ helper.addEventListener("click", ()=>{
 })
 
 
+
+reset.addEventListener("click", ()=>{
+    index = 0;
+    click= false;
+    helperActive= true
+    helper.classList.remove("not-active");
+    if (index < data.length - 1) {
+        updateQuestion();
+        nextButton.disabled = true;
+    }
+})
 

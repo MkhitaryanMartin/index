@@ -71,6 +71,7 @@
     border-radius: 50%;
     background-color: green;
     color: white;
+    cursor: pointer;
 
 }
 .not-active{
@@ -78,4 +79,12 @@
 }
 .active-answer{
     border: 5px black solid;
+    transform: scale(1.1);
+}
+
+.reset{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
